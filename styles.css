@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(#603F26, white, #FFDBB5);
+    height: 100vh;
+}
+
+.navcontainer {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+.title {
+    font-size: 70px;
+    color: #FFDBB5;
+    text-decoration: underline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.gridcontainer {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+
+    gap: 50px;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.griditem {
+    margin-top: 50px;
+    background-color: #603F26;
+    height: 600px;
+    width: 400px;
+    text-align: center;
+    border-radius: 60px;
+    transition: all ease 0.5s;
+}
+
+.griditem:hover {
+    transform: translateY(-10px);
+    box-shadow: 2px 2px 30px rgba(0,0,0,0.8);
+}
+
+.gridtitle {
+    font-size: 50px;
+    color: white;
+}
+
+.line {
+    background-color: white;
+    height: 10px;
+}
+
+.drinks {
+    list-style: none;
+    color: #FFDBB5;
+    font-size: 30px;
+    text-align: center;
+    
+}
+
+.item {
+    
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.price {
+    margin-bottom: 40px;
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media (max-width: 1250px) {
+    body {
+        height: 100%;
+    }
+    .gridcontainer {
+        grid-template-columns: 400px;
+    }
+}
